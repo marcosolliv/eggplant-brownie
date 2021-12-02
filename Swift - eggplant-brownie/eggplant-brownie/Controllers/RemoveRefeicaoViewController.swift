@@ -16,9 +16,9 @@ class RemoveRefeicaoViewController {
     
     func exibe(_ refeicao: Refeicao, handler: @escaping (UIAlertAction) -> Void) {
         let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-        let botaoCancelar = UIAlertAction(title: "cancelar", style: .cancel)
+        let botaoCancelar = UIAlertAction(title: "Cancel", style: .cancel)
         alerta.addAction(botaoCancelar)
-        let botaoRemover = UIAlertAction(title: "remover", style: .destructive, handler: handler)
+        let botaoRemover = UIAlertAction(title: "Remove", style: .destructive, handler: handler)
         
         alerta.addAction(botaoRemover)
         
